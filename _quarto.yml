@@ -1,0 +1,44 @@
+project:
+  type: website
+  output-dir: docs
+
+website:
+  title: "JINYANG XU"
+
+  navbar:
+    title: false    
+    background: "#4b7c90"
+    foreground: "white"
+    style: "dark"
+    pinned: true
+
+    left:
+      - href: index.qmd
+        text: Home
+
+      - href: Projects/project_index.qmd
+        text: Projects
+      
+      - href: Personal_CV/CV.qmd
+        text: Résumé
+
+format:
+  html:
+    theme:
+      - cosmo
+      - custom.scss
+
+    include-after-body:
+      - nav-active.html
+      - navbar-brand.html 
+      - reveal.html
+      - scroll-hero.html
+      - logo-animate-loader.js
+      - hero-pop.js
+
+    toc: true
+    code-fold: true
+
+execute:
+  freeze: auto
+  cache: true

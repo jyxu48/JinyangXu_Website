@@ -1,0 +1,44 @@
+---
+title: "Projects"
+toc: false
+page-layout: full
+---
+
+```{=html}
+<div class="project-grid">
+
+<a class="project-card" href="https://yourname.github.io/street-view-project">
+  <div class="project-img">
+    <img src="images/ai.png" />
+  </div>
+  <h3>Street-View Walkability AI</h3>
+  <p>
+    A computer vision pipeline for measuring pedestrian experience
+    using Google Street View images, semantic segmentation, and LLMs.
+  </p>
+</a>
+
+<a class="project-card" href="https://yourname.github.io/cuisine-index">
+  <div class="project-img">
+    <img src="images/cuisine.png" />
+  </div>
+  <h3>Cuisine Influence Index</h3>
+  <p>
+    Quantifying neighborhood food culture using Yelp data,
+    ACS indicators, and spatial clustering.
+  </p>
+</a>
+
+<a class="project-card" href="https://github.com/xxx/housing">
+  <div class="project-img">
+    <img src="images/housing.png" />
+  </div>
+  <h3>Housing Price Modeling</h3>
+  <p>
+    Comparative analysis of OLS, spatial lag, and GWR models
+    for urban housing markets.
+  </p>
+</a>
+
+</div>
+```

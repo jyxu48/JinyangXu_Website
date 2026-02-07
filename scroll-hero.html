@@ -1,0 +1,56 @@
+<script>
+(function () {
+  function init() {
+    const hero = document.getElementById("hero");
+    const headerBrand = document.querySelector("#quarto-header .navbar-brand");
+
+    // 如果关键元素还没 ready，就继续等（Quarto / 延迟注入）
+    if (!hero || !headerBrand) {
+      requestAnimationFrame(init);
+      return;
+    }
+
+    // =========================
+    // 可调参数（你以后只改这里）
+    // =========================
+    const START_OFFSET_RATIO = 0.2;   // hero 开始计算进度的位置
+    const BRAND_POINT = 0.45;         // navbar logo 出现时机（0~1）
+    const BRAND_HYSTERESIS = 0.03;    // 防抖，避免来回闪
+
+    let brandVisible = false;
+
+    function onScroll() {
+      const rect = hero.getBoundingClientRect();
+      const h = rect.height || 1;
+
+      // hero 滚动进度：0 → 1
+      const startOffset = window.innerHeight * START_OFFSET_RATIO;
+      let p = (startOffset - rect.top) / h;
+      p = Math.min(Math.max(p, 0), 1);
+
+      // =========================
+      // navbar brand 显隐逻辑（核心）
+      // =========================
+      if (!brandVisible && p > BRAND_POINT + BRAND_HYSTERESIS) {
+        brandVisible = true;
+        headerBrand.classList.add("is-visible");
+      }
+
+      if (brandVisible && p < BRAND_POINT - BRAND_HYSTERESIS) {
+        brandVisible = false;
+        headerBrand.classList.remove("is-visible");
+      }
+
+      // =========================
+      // （可选）调试用
+      // console.log("hero p:", p.toFixed(2));
+    }
+
+    window.addEventListener("scroll", onScroll, { passive: true });
+    onScroll(); // 初始执行一次
+  }
+
+  window.addEventListener("load", init);
+})();
+
+</script>

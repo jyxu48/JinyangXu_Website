@@ -1,0 +1,22 @@
+<script>
+  window.addEventListener('DOMContentLoaded', function () {
+    // 当前页在 dropdown 里的那一项
+    const activeChild = document.querySelector(
+      '#quarto-header .dropdown-menu .dropdown-item.active, ' +
+      '#quarto-header .dropdown-menu .dropdown-item[aria-current="page"]'
+    );
+
+    if (!activeChild) return;
+
+    // 找到它的父级 .nav-item.dropdown 以及上面的 tab 链接
+    const parentNavItem = activeChild.closest('.nav-item.dropdown');
+    if (!parentNavItem) return;
+
+    const parentLink = parentNavItem.querySelector('.nav-link');
+    if (!parentLink) return;
+
+    // 给父 tab 打上 active / aria-current（你的 CSS 已经在用这两个）
+    parentLink.classList.add('active');
+    parentLink.setAttribute('aria-current', 'page');
+  });
+</script>

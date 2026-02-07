@@ -1,0 +1,33 @@
+<script>
+document.addEventListener("DOMContentLoaded", () => {
+  const slides = Array.from(document.querySelectorAll(".slide"));
+  if (!slides.length) return;
+
+  // ✅ 只有 JS 真跑了，才启用“deck 动画模式”
+  document.documentElement.classList.add("js-ready");
+
+  function updateActiveSlide() {
+    const viewportCenter = window.innerHeight / 2;
+
+    let best = null;
+    let bestDist = Infinity;
+
+    for (const slide of slides) {
+      const rect = slide.getBoundingClientRect();
+      const center = rect.top + rect.height / 2;
+      const dist = Math.abs(center - viewportCenter);
+      if (dist < bestDist) {
+        bestDist = dist;
+        best = slide;
+      }
+    }
+
+    slides.forEach(s => s.classList.toggle("is-active", s === best));
+  }
+
+  // ✅ 首次就设置 active，避免出现“全都不是 active”
+  updateActiveSlide();
+  window.addEventListener("scroll", updateActiveSlide, { passive: true });
+  window.addEventListener("resize", updateActiveSlide);
+});
+</script>

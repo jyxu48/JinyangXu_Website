@@ -1,0 +1,52 @@
+---
+title: ""
+page-layout: full
+---
+
+## MAKE THE DATA SHINE
+
+# Jinyang Xu
+
+Urban Spatial Analytics · Data Science · Research
+
+[About](#about) ·
+[Projects](#projects) ·
+[CV](#cv) ·
+[Contact](#contact)
+
+---
+
+## About {#about}
+
+I am a graduate student in urban spatial analytics, working at the
+intersection of data science, cities, and spatial modeling.
+My interests focus on interpretable analytics, computer vision,
+and urban equity.
+
+---
+
+## Selected Projects {#projects}
+
+**Street-View Walkability AI**  
+Computer vision and semantic segmentation of Google Street View imagery  
+→ View project
+
+**Cuisine Influence Index**  
+Clustering neighborhood food culture using Yelp and ACS data  
+→ View project
+
+**Housing Price Modeling**  
+Spatial econometric models and robustness diagnostics  
+→ GitHub
+
+---
+
+## CV {#cv}
+
+[Download CV](cv.pdf)
+
+---
+
+## Contact {#contact}
+
+GitHub · LinkedIn · Email

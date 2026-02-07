@@ -1,0 +1,135 @@
+[
+  {
+    "objectID": "instructions_week1.html",
+    "href": "instructions_week1.html",
+    "title": "Portfolio Setup Instructions",
+    "section": "",
+    "text": "Welcome to MUSA 5080! This guide will help you set up your personal portfolio repository for the semester.\n\n\nBy the end of this setup, you’ll have: - Your own portfolio repository on GitHub - live website showcasing your work - A place to document your learning journey\n\n\n\n\nThis is what you are building: Dr. Delmelle’s sample portfolio\n\n\n\n\nBefore starting, make sure you have: - [ ] A GitHub account (create one here if needed) - [ ] Quarto installed on your computer (download here) - [ ] R and RStudio installed\n\n\n\n\n\nYou should already be in your personal repository (created when you accepted the GitHub Classroom assignment). Now let’s personalize it!\n\n\n\nClick on the _quarto.yml file\nClick the pencil icon (✏️) to edit\nChange \"Your Name - MUSA 5080 Portfolio\" to include your actual name\nExample: \"Jane Smith - MUSA 5080 Portfolio\"\nClick “Commit changes” at the bottom\n\n\n\n\n\nClick on the index.qmd file\nClick the pencil icon (✏️) to edit\nUpdate the “About Me” section with your information:\n\nYour name and background\nYour email address\nYour GitHub username\nWhy you’re taking this course\n\nClick “Commit changes”\n\n\n\n\n\nNavigate to the weekly-notes folder\nClick on week-01-notes.qmd\nClick the pencil icon (✏️) to edit\nFill in your notes from the first class\nClick “Commit changes”\n\n\n\n\n\nThis step makes your portfolio visible as a live website!\n\nGo to Settings: Click the “Settings” tab at the top of your repository\nFind Pages: Scroll down and click “Pages” in the left sidebar\nConfigure Source:\n\nSource: Select “Deploy from a branch”\nBranch: Select “main”\nFolder: Select “/ docs”\n\nSave: Click “Save”\nWait: GitHub will show a message that your site is being built (this takes 1-5 minutes)\n\n\n\n\n\nFind Your URL: After a few minutes, GitHub will show your website URL at the top of the Pages settings\n\nIt will look like: https://yourusername.github.io/repository-name\n\nVisit Your Site: Click the link to see your live portfolio!\nBookmark It: Save this URL - you’ll submit it to Canvas\n\n\n\n\n\nCopy your live website URL\nGo to the Canvas assignment\nSubmit your URL\n\n\n\n\n\nIf you want to work on your computer and see changes before publishing:\n\n\n# Replace [your-repo-url] with your actual repository URL\ngit clone [your-repo-url]\ncd [your-repository-name]\n\n\n\n# Edit your files using RStudio\n# Preview your changes:\nquarto render\nquarto preview\n\n# When ready, save your changes:\ngit add .\ngit commit -m \"Update portfolio\"\ngit push\nYour live website will automatically update when you push changes!\n\n\n\n\nEach week you’ll: 1. Create a new file: weekly-notes/week-XX-notes.qmd 2. Copy the template from week-01-notes.qmd 3. Fill in your reflections and key concepts 4. Commit and push your changes\n\n\n\n\n\n\nWait longer: GitHub Pages can take up to 10 minutes to build\nCheck Actions tab: Look for any red X marks indicating build failures\nVerify Pages settings: Make sure you selected “main” branch and “/docs” folder\n\n\n\n\n\nCheck permissions: Make sure you’re in YOUR repository, not the template\nSign in: Ensure you’re signed into GitHub\n\n\n\n\n\nCheck YAML syntax: Make sure your _quarto.yml file has proper formatting\nVerify file names: Files should end in .qmd not .md\nLook at error messages: The Actions tab will show specific error details\n\n\n\n\n\nDon’t panic! Every change is tracked in Git\nSee history: Click the “History” button on any file to see previous versions\nRevert changes: You can always go back to a previous version\n\n\n\n\n\n\nCommit often: Save your work frequently with descriptive commit messages\nUse branches: For major changes, create a new branch and merge when ready\nPreview locally: Use quarto preview to see changes before publishing\nKeep it professional: This portfolio can be shared with future employers!\nDocument everything: Good documentation is as important as good analysis\n\n\n\n\n\nQuarto Documentation\nGitHub Docs\nMarkdown Guide\nGit Tutorial\n\n\n\n\nDuring Class: - Raise your hand for immediate help - Work with classmates - collaboration is encouraged for setup!\nOutside Class: - Office Hours: Mondays 1:30-3:00 PM - Email: delmelle@design.upenn.edu - GitHub Issues: Create an issue in your repository for technical problems - Canvas Discussion: Post questions others might have too\n\n\n\nBefore submitting, make sure you’ve: - [ ] Customized _quarto.yml with your name - [ ] Updated index.qmd with your information - [ ] Completed Week 1 notes - [ ] Enabled GitHub Pages - [ ] Verified your website loads correctly - [ ] Submitted your URL to Canvas\n\nNeed help? Don’t struggle alone - reach out during office hours (mine + TAs) or in class!"
+  },
+  {
+    "objectID": "instructions_week1.html#what-youre-building",
+    "href": "instructions_week1.html#what-youre-building",
+    "title": "Portfolio Setup Instructions",
+    "section": "",
+    "text": "By the end of this setup, you’ll have: - Your own portfolio repository on GitHub - live website showcasing your work - A place to document your learning journey"
+  },
+  {
+    "objectID": "instructions_week1.html#example",
+    "href": "instructions_week1.html#example",
+    "title": "Portfolio Setup Instructions",
+    "section": "",
+    "text": "This is what you are building: Dr. Delmelle’s sample portfolio"
+  },
+  {
+    "objectID": "instructions_week1.html#prerequisites",
+    "href": "instructions_week1.html#prerequisites",
+    "title": "Portfolio Setup Instructions",
+    "section": "",
+    "text": "Before starting, make sure you have: - [ ] A GitHub account (create one here if needed) - [ ] Quarto installed on your computer (download here) - [ ] R and RStudio installed"
+  },
+  {
+    "objectID": "instructions_week1.html#step-by-step-setup",
+    "href": "instructions_week1.html#step-by-step-setup",
+    "title": "Portfolio Setup Instructions",
+    "section": "",
+    "text": "You should already be in your personal repository (created when you accepted the GitHub Classroom assignment). Now let’s personalize it!\n\n\n\nClick on the _quarto.yml file\nClick the pencil icon (✏️) to edit\nChange \"Your Name - MUSA 5080 Portfolio\" to include your actual name\nExample: \"Jane Smith - MUSA 5080 Portfolio\"\nClick “Commit changes” at the bottom\n\n\n\n\n\nClick on the index.qmd file\nClick the pencil icon (✏️) to edit\nUpdate the “About Me” section with your information:\n\nYour name and background\nYour email address\nYour GitHub username\nWhy you’re taking this course\n\nClick “Commit changes”\n\n\n\n\n\nNavigate to the weekly-notes folder\nClick on week-01-notes.qmd\nClick the pencil icon (✏️) to edit\nFill in your notes from the first class\nClick “Commit changes”\n\n\n\n\n\nThis step makes your portfolio visible as a live website!\n\nGo to Settings: Click the “Settings” tab at the top of your repository\nFind Pages: Scroll down and click “Pages” in the left sidebar\nConfigure Source:\n\nSource: Select “Deploy from a branch”\nBranch: Select “main”\nFolder: Select “/ docs”\n\nSave: Click “Save”\nWait: GitHub will show a message that your site is being built (this takes 1-5 minutes)\n\n\n\n\n\nFind Your URL: After a few minutes, GitHub will show your website URL at the top of the Pages settings\n\nIt will look like: https://yourusername.github.io/repository-name\n\nVisit Your Site: Click the link to see your live portfolio!\nBookmark It: Save this URL - you’ll submit it to Canvas\n\n\n\n\n\nCopy your live website URL\nGo to the Canvas assignment\nSubmit your URL"
+  },
+  {
+    "objectID": "instructions_week1.html#working-on-your-portfolio-locally-optional-but-recommended",
+    "href": "instructions_week1.html#working-on-your-portfolio-locally-optional-but-recommended",
+    "title": "Portfolio Setup Instructions",
+    "section": "",
+    "text": "If you want to work on your computer and see changes before publishing:\n\n\n# Replace [your-repo-url] with your actual repository URL\ngit clone [your-repo-url]\ncd [your-repository-name]\n\n\n\n# Edit your files using RStudio\n# Preview your changes:\nquarto render\nquarto preview\n\n# When ready, save your changes:\ngit add .\ngit commit -m \"Update portfolio\"\ngit push\nYour live website will automatically update when you push changes!"
+  },
+  {
+    "objectID": "instructions_week1.html#weekly-workflow",
+    "href": "instructions_week1.html#weekly-workflow",
+    "title": "Portfolio Setup Instructions",
+    "section": "",
+    "text": "Each week you’ll: 1. Create a new file: weekly-notes/week-XX-notes.qmd 2. Copy the template from week-01-notes.qmd 3. Fill in your reflections and key concepts 4. Commit and push your changes"
+  },
+  {
+    "objectID": "instructions_week1.html#troubleshooting",
+    "href": "instructions_week1.html#troubleshooting",
+    "title": "Portfolio Setup Instructions",
+    "section": "",
+    "text": "Wait longer: GitHub Pages can take up to 10 minutes to build\nCheck Actions tab: Look for any red X marks indicating build failures\nVerify Pages settings: Make sure you selected “main” branch and “/docs” folder\n\n\n\n\n\nCheck permissions: Make sure you’re in YOUR repository, not the template\nSign in: Ensure you’re signed into GitHub\n\n\n\n\n\nCheck YAML syntax: Make sure your _quarto.yml file has proper formatting\nVerify file names: Files should end in .qmd not .md\nLook at error messages: The Actions tab will show specific error details\n\n\n\n\n\nDon’t panic! Every change is tracked in Git\nSee history: Click the “History” button on any file to see previous versions\nRevert changes: You can always go back to a previous version"
+  },
+  {
+    "objectID": "instructions_week1.html#pro-tips",
+    "href": "instructions_week1.html#pro-tips",
+    "title": "Portfolio Setup Instructions",
+    "section": "",
+    "text": "Commit often: Save your work frequently with descriptive commit messages\nUse branches: For major changes, create a new branch and merge when ready\nPreview locally: Use quarto preview to see changes before publishing\nKeep it professional: This portfolio can be shared with future employers!\nDocument everything: Good documentation is as important as good analysis"
+  },
+  {
+    "objectID": "instructions_week1.html#additional-resources",
+    "href": "instructions_week1.html#additional-resources",
+    "title": "Portfolio Setup Instructions",
+    "section": "",
+    "text": "Quarto Documentation\nGitHub Docs\nMarkdown Guide\nGit Tutorial"
+  },
+  {
+    "objectID": "instructions_week1.html#getting-help",
+    "href": "instructions_week1.html#getting-help",
+    "title": "Portfolio Setup Instructions",
+    "section": "",
+    "text": "During Class: - Raise your hand for immediate help - Work with classmates - collaboration is encouraged for setup!\nOutside Class: - Office Hours: Mondays 1:30-3:00 PM - Email: delmelle@design.upenn.edu - GitHub Issues: Create an issue in your repository for technical problems - Canvas Discussion: Post questions others might have too"
+  },
+  {
+    "objectID": "instructions_week1.html#checklist",
+    "href": "instructions_week1.html#checklist",
+    "title": "Portfolio Setup Instructions",
+    "section": "",
+    "text": "Before submitting, make sure you’ve: - [ ] Customized _quarto.yml with your name - [ ] Updated index.qmd with your information - [ ] Completed Week 1 notes - [ ] Enabled GitHub Pages - [ ] Verified your website loads correctly - [ ] Submitted your URL to Canvas\n\nNeed help? Don’t struggle alone - reach out during office hours (mine + TAs) or in class!"
+  },
+  {
+    "objectID": "Personal_CV/CV.html",
+    "href": "Personal_CV/CV.html",
+    "title": "JINYANG XU",
+    "section": "",
+    "text": "Open CV Download CV"
+  },
+  {
+    "objectID": "Projects/project_index.html",
+    "href": "Projects/project_index.html",
+    "title": "Projects",
+    "section": "",
+    "text": "Street-View Walkability AI\n  \n    A computer vision pipeline for measuring pedestrian experience\n    using Google Street View images, semantic segmentation, and LLMs.\n  \n\n\n\n  \n    \n  \n  Cuisine Influence Index\n  \n    Quantifying neighborhood food culture using Yelp data,\n    ACS indicators, and spatial clustering.\n  \n\n\n\n  \n    \n  \n  Housing Price Modeling\n  \n    Comparative analysis of OLS, spatial lag, and GWR models\n    for urban housing markets."
+  },
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "JINYANG XU",
+    "section": "",
+    "text": "better\n      urban\n      analytics\n    \n\n  \n\n  \n  \n\n  \n    \n      \n    \n    \n    \n    \n      \n        \n          Always be creactive and be curious \n        \n      \n\n      \n        \n          Statistical modeling, reproducible pipelines, and interpretable data products.\n        \n      \n\n      \n        \n          Housing, transportation, and equity-focused policy evaluation.\n        \n      \n    \n\n  \n\n\n\n\n\n\n\n\n  Recent Projects\n\n\n\n  Project\n\n\n\n  \n    \n    Interative Website Mapping US Renteal Subsidy.\n  \n\n\n\n  \n\n\n\nAbout Me\nI work at the intersection of urban analytics, spatial modeling, and public policy, with a focus on interpretable, data-driven approaches to urban systems.\n\n\nContact\nEmail · GitHub · LinkedIn"
+  },
+  {
+    "objectID": "personal.html#about",
+    "href": "personal.html#about",
+    "title": "Jinyang Xu",
+    "section": "About",
+    "text": "About\nI am a graduate student in urban spatial analytics, working at the intersection of data science, cities, and spatial modeling. My interests focus on interpretable analytics, computer vision, and urban equity."
+  },
+  {
+    "objectID": "personal.html#projects",
+    "href": "personal.html#projects",
+    "title": "Jinyang Xu",
+    "section": "Selected Projects",
+    "text": "Selected Projects\nStreet-View Walkability AI\nComputer vision and semantic segmentation of Google Street View imagery\n→ View project\nCuisine Influence Index\nClustering neighborhood food culture using Yelp and ACS data\n→ View project\nHousing Price Modeling\nSpatial econometric models and robustness diagnostics\n→ GitHub"
+  },
+  {
+    "objectID": "personal.html#cv",
+    "href": "personal.html#cv",
+    "title": "Jinyang Xu",
+    "section": "CV",
+    "text": "CV\nDownload CV"
+  },
+  {
+    "objectID": "personal.html#contact",
+    "href": "personal.html#contact",
+    "title": "Jinyang Xu",
+    "section": "Contact",
+    "text": "Contact\nGitHub · LinkedIn · Email"
+  }
+]

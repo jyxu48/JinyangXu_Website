@@ -7,7 +7,7 @@ page-layout: full
 ```{=html}
 <div class="project-grid">
 
-<a class="project-card" href="https://yourname.github.io/street-view-project">
+<a class="project-card" href="https://jyxu48.github.io/AI-for-Urban-Sustainability/about.html">
   <div class="project-img">
     <img src="images/ai.png" />
   </div>

@@ -2,6 +2,7 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,500;0,600;0,700;1,600&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@400;600;700&family=DM+Sans:wght@400;500;600&display=swap');
 
 /* ======================================================
    0. Base
@@ -36,7 +37,10 @@ body {
   -webkit-backdrop-filter: saturate(140%) blur(6px);
   border: 0;
   box-shadow: none;
+  padding-left: 10rem;
+  padding-right: 3rem;
 }
+
 
 /* brand 居中 */
 #quarto-header .navbar-brand {
@@ -52,6 +56,13 @@ body {
   line-height: 1;
   
 }
+
+#quarto-header .navbar-nav .nav-link {
+  font-family: 'Inter', sans-serif;
+  font-size: 1.15rem;   /* 👈 改这里 */
+  font-weight: 500;
+}
+
 
 /* navbar：文字 / logo 切换 */
 #quarto-header .nav-text {
@@ -93,20 +104,12 @@ body {
    2. Slides
    ====================================================== */
 
-.slides { width: 100%; }
 
 .slide {
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  padding: 8vh 8vw;
+  gap: 1.8rem;
+  padding: 8vh 0vw;
 }
 
-.slide:not([data-slide="hero"]) {
-  justify-content: flex-start;
-  padding: 5rem 6vw 3rem;
-}
 
 /* ======================================================
    3. HERO — cover → reveal
@@ -133,7 +136,7 @@ body {
 .hero-cover {
   display: grid;
   justify-items: center;
-  gap: 3rem;
+  gap: 4em;
 
   transition:
     opacity 0.45s cubic-bezier(.4,0,.2,1),
@@ -179,9 +182,9 @@ body {
   width: min(900px, 95vw);
 
   /* 🔧 你可以只改这三个值 */
-  --logo-scale: 1.1;   /* 放大倍数（现在相当于你原来的 120%） */
+  --logo-scale: 1.15;   /* 放大倍数（现在相当于你原来的 120%） */
   --logo-x: -45px;       /* 水平微调 */
-  --logo-y: 30px;       /* 垂直微调 */
+  --logo-y: 63px;       /* 垂直微调 */
 
   display: flex;
   justify-content: center;
@@ -220,12 +223,13 @@ body {
 
 .identity-item p {
   margin: 0;
-  font-size: 1.3rem;
-  font-weight: 380;
+  font-family: 'Asap', sans-serif;
+  font-size: 1.18rem;
+  font-weight: 230;
   line-height: 1.6;
-  letter-spacing: -0.01rem;
-  max-width: 38ch;
-  opacity: 0.85;
+  letter-spacing: -0.035rem;
+  max-width: 40ch;
+  opacity: 0.7;
 }
 
 .hero-identity-grid {
@@ -263,6 +267,101 @@ body {
     opacity 0.35s cubic-bezier(.4,0,.2,1);
 }
 
+
+/* ======================================================
+   HOME Projects (prefixed)
+   ====================================================== */
+
+.homeproject-img {
+  width: 100%;
+  max-width: 1135px;
+  height: 600px;          /* 矮一点 */
+  overflow: hidden;       /* 裁掉边缘 */
+  min-width: 0;
+  border-radius: 6px;
+  margin-top: 3.3rem;
+  margin-bottom: 0.5rem;
+}
+
+/* 图片本体：显示中心，边缘挤出 */
+.homeproject-img img {
+  display: block;
+
+  width: 100%;
+  height: 100%;           /* 填满图框高度 */
+  object-fit: cover;      /* 裁掉边缘 */
+  object-position: center;
+
+  border-radius: 6px;
+
+  transition: transform 0.35s ease;
+  transform-origin: center;
+}
+
+/* hover：轻微放大 */
+.homeproject-img img:hover {
+  transform: scale(1.04);
+}
+
+/* title */
+.homeproject-card h3 {
+  position: relative;
+  display: inline-block;
+
+  font-family: 'Inter', sans-serif;
+  font-size: 1.5rem;
+  font-weight: 520;
+  color: #111;
+  line-height: 1.3;
+
+  text-decoration: none;
+  margin-top: 0rem;
+}
+
+/* underline 背景层 */
+.homeproject-card h3::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0.15em;
+
+  width: 100%;
+  height: 0.6em;
+  background: #d2d2d2;
+
+  z-index: -1;
+  transform: scaleX(0);
+  transform-origin: left;
+  transition: transform 0.25s ease;
+}
+
+/* hover 触发 */
+.homeproject-card:hover h3::after {
+  transform: scaleX(1);
+}
+
+/* description */
+.homeproject-card p {
+  font-size: 1.25rem;
+  line-height: 1.6;
+  font-weight: 400;
+  color: #a9a9a9;
+
+  margin: 0;
+  max-width: 70ch;
+  text-decoration: none;
+  background: none;
+}
+
+/* ===== 清除 homeproject-card 链接默认样式 ===== */
+.homeproject-card,
+.homeproject-card:visited,
+.homeproject-card:hover,
+.homeproject-card:active {
+  color: inherit;
+  text-decoration: none;
+}
+
 /* ---------- 3.8 Mobile ---------- */
 
 @media (max-width: 900px) {
@@ -290,9 +389,9 @@ body {
    ====================================================== */
 
 .project-text h2 {
-  font-size: 2.2rem;
-  font-weight: 600;
-  margin-bottom: 0.5rem;
+  font-size: 1.3rem;
+  font-weight: 520;
+  margin-bottom: 0.2rem;
 }
 
 .project-subtitle {
@@ -413,7 +512,7 @@ body {
   text-align: center;
 
   /* 静态字距，不做动画 */
-  letter-spacing: -0.08rem;
+  letter-spacing: -0.05rem;
 
   /* ❌ 不要 transition */
 }
@@ -433,6 +532,13 @@ body {
 /* ======================================================
    FIX: Remove hero fade only
    ====================================================== */
+
+/* 首次滚动前，强制隐藏 reveal */
+#hero:not(.has-scrolled) .hero-reveal {
+  opacity: 0 !important;
+  pointer-events: none;
+}
+
 
 #hero {
   --p: 0; /* 0 = 收起，1 = 完全展开 */
@@ -466,11 +572,11 @@ body {
 
 
 .hero-keywords .kw-left {
-  transform: translateX(calc(var(--p) * -6vw));
+  transform: translateX(calc(var(--p) * -6.5vw));
 }
 
 .hero-keywords .kw-center {
-  transform: translateX(calc(var(--p) * 6vw));
+  transform: translateX(calc(var(--p) * 5.5vw));
 }
 
 .hero-keywords .kw-right {
@@ -504,39 +610,21 @@ body {
 
 /* ===== Single PDF page ===== */
 
-.pdf-page {
-  position: relative;
+/* ===== Resume / CV native PDF ===== */
 
-  background: white;
-  box-shadow: 0 20px 60px rgba(0,0,0,0.08);
-  border-radius: 6px;
-
-  overflow: hidden;
-}
-
-/* canvas is the visual PDF */
-.pdf-page canvas {
+/* 直接作用于 object（不改 qmd） */
+object[type="application/pdf"] {
   display: block;
-}
 
-/* ===== Text layer (for selection & copy) ===== */
+  width: min(900px, 80%) !important;   /* 覆盖 inline 80% */
+  height: 327vh; /* 覆盖 327vh */
 
-.textLayer {
-  position: absolute;
-  inset: 0;
+  margin: 1.2rem auto 3rem;  /* 👈 水平居中 */
 
-  pointer-events: auto;
-  user-select: text;
-}
+  background: #fff;
+  border-radius: 8px;
 
-/* text itself invisible but selectable */
-.textLayer span {
-  color: transparent;
-}
-
-/* optional: nicer selection highlight */
-.textLayer ::selection {
-  background: rgba(180, 180, 180, 0.35);
+  box-shadow: 0 20px 60px rgba(0,0,0,0.12);
 }
 
 /*--------------------------------------------*/
@@ -546,7 +634,7 @@ body {
 .cv-actions {
   position: fixed;
   top: 8rem;
-  right: 12rem;
+  right: 6rem;
   z-index: 1001;
 
   display: flex;
@@ -587,4 +675,36 @@ body {
 .cv-open {
   color: #444;
   border-color: #bdbdbd;
+}
+
+.contact-links {
+  display: flex;
+  gap: 1.5rem;
+  align-items: center;
+  margin-top: 0.5rem;
+}
+
+.contact-links a {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+
+  font-family: 'Inter', sans-serif;
+  font-size: 0.95rem;
+  font-weight: 500;
+  color: #555;
+  text-decoration: none;
+
+  transition: color 0.2s ease, transform 0.2s ease;
+}
+
+.contact-links a:hover {
+  color: #111;
+  transform: translateY(-1px);
+}
+
+.contact-links svg {
+  width: 16px;
+  height: 16px;
+  fill: currentColor;
 }

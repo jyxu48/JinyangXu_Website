@@ -6,11 +6,17 @@ execute:
 ---
 
 <div class="cv-actions">
-  <a href="CV-0207.pdf" target="_blank">Open CV</a>
+  <a href="CV-0207.pdf" target="_blank">Open CV in a new tab</a>
   <a href="CV-0207.pdf" download>Download CV</a>
 </div>
 
-<div id="pdf-container"></div>
+<object
+  data="CV-0207.pdf"
+  type="application/pdf"
+  style="width:80%; height:327vh; border:none;">
+  <p>
+    Your browser does not support embedded PDFs.
+    <a href="CV-0207.pdf">Download CV</a>
+  </p>
+</object>
 
-<script src="https://cdnjs.cloudflare.com/ajax/libs/pdf.js/3.11.174/pdf.min.js"></script>
-<script src="./pdf-viewer.js"></script>

@@ -4,6 +4,11 @@
     const hero = document.getElementById("hero");
     const headerBrand = document.querySelector("#quarto-header .navbar-brand");
 
+    if (!hero && brand) {
+      brand.classList.add("is-visible");
+      // ⛔ 重要：非首页不需要任何 hero scroll 逻辑
+      return;
+    }
     // 如果关键元素还没 ready，就继续等（Quarto / 延迟注入）
     if (!hero || !headerBrand) {
       requestAnimationFrame(init);
@@ -14,7 +19,7 @@
     // 可调参数（你以后只改这里）
     // =========================
     const START_OFFSET_RATIO = 0.2;   // hero 开始计算进度的位置
-    const BRAND_POINT = 0.45;         // navbar logo 出现时机（0~1）
+    const BRAND_POINT = 0.3;         // navbar logo 出现时机（0~1）
     const BRAND_HYSTERESIS = 0.03;    // 防抖，避免来回闪
 
     let brandVisible = false;

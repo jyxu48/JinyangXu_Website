@@ -1,15 +1,5 @@
----
-toc: false
-page-layout: full
----
-
-```{=html}
-<section id="hero">
-
-  <!-- 初始封面态 -->
-  <div class="hero-cover">
-    <div id="logoWrap" class="site-logo">
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 386.98 49.23">
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 398.65 55.68">
   <defs>
     <style>
       .cls-1 {
@@ -62,51 +52,8 @@ page-layout: full
         fill: #040000;
       }
     </style>
-      <g id="Motion">
-        <path id="PATH_J_1" class="cls-4 motion-path" d="M47.63,28.07v10.92c0,2.09.87,6.95,8.93,6.95s8.99-4.86,8.99-6.95L65.69,0"/>
-        <path id="PATH_I_1" class="cls-4 motion-path" d="M84.28,49.2V0"/>
-        <path id="PATH_N_1" class="cls-4 motion-path" d="M119.3,40.97l-7.8-31.48c-.28-1.16-.56-2.02-.85-2.64-.51-1.07-1.42-1.81-2.55-2.09-.68-.17-1.58-.25-2.83-.25s-2.27,1.02-2.27,2.27v42.43"/>
-        <path id="PATH_N_2" class="cls-4 motion-path" d="M127.58,1.61v41.36c0,1.32-1.02,2.4-2.27,2.4s-2.16-.1-2.87-.31c-1.13-.33-2.02-1.12-2.52-2.23-.29-.64-.56-1.5-.84-2.7"/>
-        <path id="PATH_Y_2" class="cls-4 motion-path" d="M154.06,32.15v15.72"/>
-        <path id="PATH_Y_1" class="cls-4 motion-path" d="M166.95.93l-5.95,23.03c-.55,2.25-1.28,3.77-2.3,4.75-1.12,1.08-2.68,1.63-4.64,1.63s-3.55-.57-4.67-1.69c-.98-.98-1.73-2.53-2.27-4.71l-5.95-23.02"/>
-        <line id="PATH_A_2" class="cls-4 motion-path" x1="201.04" y1="27.53" x2="182.86" y2="27.53"/>
-        <path id="PATH_A_1" class="cls-4 motion-path" d="M203.57,49.2V11.15c0-2.38-.79-4.04-2.48-5.22-1.9-1.32-4.87-1.99-8.81-1.99s-7.26.69-9.31,2.05c-1.81,1.2-2.65,2.84-2.65,5.16v38.05"/>
-       <path id="PATH_G_1" class="cls-4 motion-path" d="M272.19,25.57h6.85c2.66,0,4.53.59,5.71,1.79,1.16,1.2,1.72,3.08,1.72,5.75v5.88c0,2.37-1.28,4.33-3.62,5.5-1.92.97-4.52,1.45-7.95,1.45-9.21,0-11.15-3.78-11.15-6.95V10.55c0-2.35,1.24-4.3,3.49-5.49,1.87-.98,4.35-1.46,7.6-1.46,8.87,0,10.73,3.78,10.73,6.95v6.59"/>
-       <path id="PATH_X_1" class="cls-4 motion-path" d="M321.05,48.56l5.5-18.26c.66-2.17,1.56-3.72,2.76-4.72,1.26-1.05,2.94-1.58,4.99-1.58s3.72.51,4.97,1.52c1.22.99,2.13,2.55,2.79,4.78l5.5,18.25"/>
-       <path id="PATH_X_2" class="cls-4 motion-path" d="M347.77.57l-5.74,17.53c-.7,2.14-1.6,3.67-2.75,4.65-1.24,1.06-2.91,1.59-4.98,1.59s-3.74-.54-4.98-1.59c-1.16-.98-2.06-2.51-2.76-4.65l-5.74-17.52"/>
-       <path id="PATH_N2_1" class="cls-4 motion-path" d="M237.84,41l-7.8-31.48c-.28-1.16-.56-2.02-.85-2.64-.51-1.07-1.42-1.81-2.55-2.09-.68-.17-1.58-.25-2.83-.25s-2.27,1.02-2.27,2.27v42.43"/>
-       <path id="PATH_N2_2" class="cls-4 motion-path" d="M246.11,1.64v41.36c0,1.32-1.02,2.4-2.27,2.4s-2.16-.1-2.87-.31c-1.13-.33-2.02-1.12-2.52-2.23-.29-.64-.56-1.5-.84-2.7"/>
-      <path id="PATH_U_1" class="cls-4 motion-path" d="M361.47.57v38.05c0,2.38.79,4.04,2.48,5.22,1.9,1.32,4.87,1.99,8.81,1.99s7.26-.69,9.31-2.05c1.81-1.2,2.65-2.84,2.65-5.16V.57"/>
-      </g>
-    <mask
-	    id="ERASE_MASK"
-	    maskUnits="userSpaceOnUse"
-	    maskContentUnits="userSpaceOnUse"
-	    x="0" y="0" width="386.98" height="49.23">
-
-	    <!-- 白底：默认全部可见 -->
-	    <rect
-	    	x="0" y="0"
-	    	width="386.98" height="49.23"
-	    	fill="white"/>
-    </mask>
-    
-    <mask
-	    id="ERASE_MASK_BACK"
-	    maskUnits="userSpaceOnUse"
-	    maskContentUnits="userSpaceOnUse"
-	    x="0" y="0" width="386.98" height="49.23">
-
-	    <!-- 白底：默认全部可见 -->
-	    <rect
-	    	x="0" y="0"
-	    	width="386.98" height="49.23"
-	    	fill="white"/>
-    </mask>
   </defs>
-  
-  <g id="MASK_RUNTIME"></g>
-  <g id="_图层_5" data-name="图层 5" mask="url(#ERASE_MASK_BACK)">
+  <g id="_图层_5" data-name="图层 5">
     <path class="cls-8" d="M65.68,2.27h0c-.43,0-.8.04-1.12.1s-.57.26-.74.53l-.35.55c-.12.19-.19.42-.19.65v34.9c0,3.12-2.24,4.68-6.72,4.68s-6.66-1.56-6.66-4.68v-7.92c0-.4-.15-.71-.45-.93-.75-.56-1.82.09-1.82,1.03v7.82c0,2.09.87,6.95,8.93,6.95s8.99-4.86,8.99-6.95l.13-36.72Z"/>
     <path class="cls-6" d="M84.28,2.27c-1.6,0-2.4.46-2.4,1.38v42.24c0,.92.8,1.38,2.4,1.38V2.27Z"/>
     <g>
@@ -126,9 +73,7 @@ page-layout: full
     </g>
     <path class="cls-4" d="M384.71,2.28v36.34c0,2.32-.84,3.96-2.65,5.16-2.05,1.36-5.18,2.05-9.31,2.05s-6.91-.67-8.81-1.99c-1.69-1.18-2.48-2.83-2.48-5.22V2.28c-1.51.02-2.27.47-2.27,1.38v34.74c0,3.12,1.16,5.48,3.48,7.08,2.32,1.6,5.72,2.4,10.2,2.4s8.05-.82,10.47-2.46c2.42-1.64,3.63-3.98,3.63-7.02V3.65c0-.89-.76-1.35-2.27-1.38Z"/>
   </g>
-  
-  
-  <g id="_图层_1" data-name="图层 1" mask="url(#ERASE_MASK)">
+  <g id="_图层_1" data-name="图层 1">
     <path id="L_J" class="cls-7" d="M63.28,38.99c0,3.12-2.24,4.68-6.72,4.68s-6.66-1.56-6.66-4.68v-7.92c0-.92-.8-1.38-2.4-1.38s-2.4.46-2.4,1.38v7.32c0,2.96,1.01,5.28,3.03,6.96,2.02,1.68,4.83,2.52,8.43,2.52s6.42-.84,8.46-2.52c2.04-1.68,3.06-4,3.06-6.96V3.65c0-.92-.8-1.38-2.4-1.38s-2.4.46-2.4,1.38v35.34Z"/>
     <path id="L_I" class="cls-1" d="M84.28,47.27c-1.6,0-2.4-.46-2.4-1.38V3.65c0-.92.8-1.38,2.4-1.38s2.4.46,2.4,1.38v42.24c0,.92-.8,1.38-2.4,1.38Z"/>
     <path id="L_N" class="cls-1" d="M117.1,41.51l-7.8-31.5c-.24-1-.47-1.73-.69-2.19-.22-.46-.57-.75-1.05-.87s-1.24-.18-2.28-.18v39.12c0,.92-.8,1.38-2.4,1.38s-2.4-.46-2.4-1.38V6.89c0-1.76.24-2.92.72-3.48.48-.56,1.44-.84,2.88-.84h1.32c1.92,0,3.38.13,4.38.39,1,.26,1.76.8,2.28,1.62.52.82.98,2.07,1.38,3.75l7.8,31.5c.24.96.47,1.67.69,2.13.22.46.58.76,1.08.9.5.14,1.25.21,2.25.21V3.95c0-.92.8-1.38,2.4-1.38s2.4.46,2.4,1.38v38.82c0,1.84-.23,3.05-.69,3.63-.46.58-1.43.87-2.91.87h-1.32c-1.88,0-3.33-.13-4.35-.39s-1.78-.81-2.28-1.65c-.5-.84-.97-2.08-1.41-3.72Z"/>
@@ -139,137 +84,23 @@ page-layout: full
     <path id="L_X" class="cls-3" d="M319.66,46.07l4.62-15.78c.48-1.64,1.02-2.95,1.62-3.93.6-.98,1.42-1.71,2.46-2.19-1-.48-1.8-1.21-2.4-2.19s-1.16-2.29-1.68-3.93l-4.62-14.58c-.12-.8.64-1.2,2.28-1.2,1.32,0,2.08.46,2.28,1.38l4.5,13.74c.56,1.72,1.25,2.93,2.07,3.63.82.7,1.99,1.05,3.51,1.05s2.69-.35,3.51-1.05c.82-.7,1.51-1.91,2.07-3.63l4.5-13.74c.2-.92.96-1.38,2.28-1.38,1.6,0,2.36.4,2.28,1.2l-4.62,14.58c-.52,1.64-1.09,2.95-1.71,3.93-.62.98-1.43,1.71-2.43,2.19,1.04.48,1.87,1.21,2.49,2.19.62.98,1.17,2.29,1.65,3.93l4.62,15.78c.08.8-.68,1.2-2.28,1.2-1.32,0-2.08-.46-2.28-1.38l-4.5-14.94c-.52-1.76-1.2-2.98-2.04-3.66-.84-.68-2.02-1.02-3.54-1.02s-2.7.35-3.54,1.05c-.84.7-1.52,1.91-2.04,3.63l-4.5,14.94c-.2.92-.96,1.38-2.28,1.38-1.64,0-2.4-.4-2.28-1.2Z"/>
     <path id="L_U" class="cls-11" d="M364,3.65v35.34c0,3.12,2.96,4.68,8.88,4.68,3.04,0,5.35-.4,6.93-1.2,1.58-.8,2.37-1.96,2.37-3.48V3.65c0-.92.8-1.38,2.4-1.38s2.4.46,2.4,1.38v34.74c0,3.04-1.21,5.38-3.63,7.02-2.42,1.64-5.91,2.46-10.47,2.46s-7.88-.8-10.2-2.4c-2.32-1.6-3.48-3.96-3.48-7.08V3.65c0-.92.78-1.38,2.34-1.38,1.64,0,2.46.46,2.46,1.38Z"/>
   </g>
-</svg> 
-    </div>
-
-
-
-
-    <div class="hero-keywords">
-      <span class="kw-left">better</span>
-      <span class="kw-center">urban</span>
-      <span class="kw-right">analytics</span>
-    </div>
-
-  </div>
-
-  <!-- 滚动展开态（默认隐藏） -->
-  <div id="hero-trigger"></div>
-
-  <div class="hero-reveal">
-    <div class="hero-photo-wrap">
-      <img src="profile.jpg" alt="Jinyang Xu">
-    </div>
-    
-    <div class="hero-identity-grid">
-    
-      <div class="identity-item">
-        <p>
-          Better Decisions.<br>
-          With Creativity, I use data to turn complex, messy problems into clear, decision-ready insights, help stakeholders act with confidence.
-        </p>
-      </div>
-
-      <div class="identity-item">
-        <p>
-          Urban Perspective.<br>
-          Working on urban systems gives me a different way of seeing problems:where space, people, policy, and data interact, and simple answers rarely work.
-        </p>
-      </div>
-
-      <div class="identity-item">
-        <p>
-          Analytical Thinking.<br>
-          Both a mindset and a technical practice, ranging from Python-based data pipelines and spatial analysis to statistical modeling and machine learning. Always with a focus on interpretability.
-        </p>
-      </div>
-    </div>
-
-  </div>
-
-</section>
-
-```
-<script defer src="hero-scroll.js"></script>
-<script defer src="logo-animate.js"></script>
-<script defer src="hero-pop.js"></script>
-
-::::::: slides
-
-
-```{=html}
-<div class="project-text">
-  <h2>Recent Projects</h2>
-</div>
-
-<div class="homeproject-grid">
-
-<a class="homeproject-card" href="https://yourname.github.io/street-view-project">
-  <div class="homeproject-layout">
-    <div class="homeproject-img">
-      <img src="images/rentalcover.png" />
-    </div>
-
-    <div class="homeproject-text">
-      <h3 class="homeproject-title">Mapping the U.S. Rental Subsidy</h3>
-      <p class="homeproject-desc">
-        An Interactive website aggregated rental subsidy data, demographic and local context. 
-      </p>
-    </div>
-  </div>
-</a>
-
-<a class="homeproject-card" href="https://yourname.github.io/street-view-project">
-  <div class="homeproject-layout">
-    <div class="homeproject-img">
-      <img src="images/ai.png" />
-    </div>
-
-    <div class="homeproject-text">
-      <h3 class="homeproject-title">Mapping the U.S. Rental Subsidy</h3>
-      <p class="homeproject-desc">
-        An Interactive website aggregated rental subsidy data, demographic and local context. 
-      </p>
-    </div>
-  </div>
-</a>
-</div>
-
-```
-
-::: {.slide data-slide="about"}
-### About Me
-
-I work at the intersection of urban analytics, spatial modeling, and public policy, with a focus on interpretable, data-driven approaches to urban systems.
-
-### Contact
-
-```{=html}
-<div class="contact-links">
-  <a href="mailto:jyxu48@upenn.edu" aria-label="Email">
-    <!-- Mail -->
-    <svg viewBox="0 0 24 24">
-      <path d="M2 4h20v16H2V4zm10 7L3.5 6.5v11h17v-11L12 11zm0-2.5L20.5 6h-17L12 8.5z"/>
-    </svg>
-    <span>Email</span>
-  </a>
-
-  <a href="https://github.com/jyxu48" target="_blank" aria-label="GitHub">
-    <!-- GitHub -->
-    <svg viewBox="0 0 24 24">
-      <path d="M12 .5C5.73.5.5 5.74.5 12.02c0 5.11 3.29 9.44 7.86 10.97.58.1.79-.25.79-.56v-2.03c-3.2.7-3.87-1.38-3.87-1.38-.52-1.33-1.27-1.69-1.27-1.69-1.04-.71.08-.7.08-.7 1.15.08 1.76 1.18 1.76 1.18 1.02 1.75 2.68 1.25 3.33.96.1-.74.4-1.25.72-1.54-2.55-.29-5.23-1.28-5.23-5.68 0-1.25.45-2.27 1.18-3.07-.12-.29-.51-1.46.11-3.05 0 0 .97-.31 3.18 1.17a11.07 11.07 0 012.9-.39c.99 0 1.99.13 2.9.39 2.21-1.48 3.18-1.17 3.18-1.17.62 1.59.23 2.76.11 3.05.74.8 1.18 1.82 1.18 3.07 0 4.41-2.69 5.39-5.25 5.67.41.35.77 1.04.77 2.1v3.12c0 .31.21.67.8.56A11.53 11.53 0 0023.5 12C23.5 5.74 18.27.5 12 .5z"/>
-    </svg>
-    <span>GitHub</span>
-  </a>
-
-  <a href="https://www.linkedin.com/in/jyxu48" target="_blank" aria-label="LinkedIn">
-    <!-- LinkedIn -->
-    <svg viewBox="0 0 24 24">
-      <path d="M4.98 3.5C3.33 3.5 2 4.84 2 6.48c0 1.64 1.33 2.98 2.98 2.98h.02c1.65 0 2.98-1.34 2.98-2.98C7.98 4.84 6.65 3.5 5 3.5zM2.4 21.5h5.17V9.98H2.4V21.5zM9.56 9.98h4.95v1.57h.07c.69-1.23 2.38-2.52 4.9-2.52 5.24 0 6.2 3.45 6.2 7.93v4.54h-5.17v-4.02c0-.96-.02-2.2-1.34-2.2-1.35 0-1.56 1.05-1.56 2.13v4.09H9.56V9.98z"/>
-    </svg>
-    <span>LinkedIn</span>
-  </a>
-</div>
-```
-:::
-:::::::
+  <g id="mask">
+    <path id="ERASER" class="cls-12" d="M11.26,13.37H1.44c-.8,0-1.44.9-1.44,2.02v.53c0,1.12.65,2.02,1.44,2.02h9.82c.8,0,1.44-.9,1.44-2.02v-.53c0-1.12-.65-2.02-1.44-2.02Z"/>
+  </g>
+  <g id="Motion">
+    <path id="PATH_J_1" class="cls-5" d="M47.63,28.07v10.92c0,2.09.87,6.95,8.93,6.95s8.99-4.86,8.99-6.95L65.69,0"/>
+    <path id="PATH_I_1" class="cls-5" d="M84.28,49.2V0"/>
+    <path id="PATH_N_1" class="cls-5" d="M119.3,40.97l-7.8-31.48c-.28-1.16-.56-2.02-.85-2.64-.51-1.07-1.42-1.81-2.55-2.09-.68-.17-1.58-.25-2.83-.25s-2.27,1.02-2.27,2.27v42.43"/>
+    <path id="PATH_N_2" class="cls-5" d="M127.58,1.61v41.36c0,1.32-1.02,2.4-2.27,2.4s-2.16-.1-2.87-.31c-1.13-.33-2.02-1.12-2.52-2.23-.29-.64-.56-1.5-.84-2.7"/>
+    <path id="PATH_Y_2" class="cls-5" d="M154.06,32.15v15.72"/>
+    <path id="PATH_Y_1" class="cls-5" d="M166.95.93l-5.95,23.03c-.55,2.25-1.28,3.77-2.3,4.75-1.12,1.08-2.68,1.63-4.64,1.63s-3.55-.57-4.67-1.69c-.98-.98-1.73-2.53-2.27-4.71l-5.95-23.02"/>
+    <line id="PATH_A_2" class="cls-5" x1="201.04" y1="27.53" x2="182.86" y2="27.53"/>
+    <path id="PATH_A_1" class="cls-5" d="M203.57,49.2V11.15c0-2.38-.79-4.04-2.48-5.22-1.9-1.32-4.87-1.99-8.81-1.99s-7.26.69-9.31,2.05c-1.81,1.2-2.65,2.84-2.65,5.16v38.05"/>
+    <path id="PATH_G_1" class="cls-5" d="M272.19,25.57h6.85c2.66,0,4.53.59,5.71,1.79,1.16,1.2,1.72,3.08,1.72,5.75v5.88c0,2.37-1.28,4.33-3.62,5.5-1.92.97-4.52,1.45-7.95,1.45-9.21,0-11.15-3.78-11.15-6.95V10.55c0-2.35,1.24-4.3,3.49-5.49,1.87-.98,4.35-1.46,7.6-1.46,8.87,0,10.73,3.78,10.73,6.95v6.59"/>
+    <path id="PATH_X_1" class="cls-5" d="M321.05,48.56l5.5-18.26c.66-2.17,1.56-3.72,2.76-4.72,1.26-1.05,2.94-1.58,4.99-1.58s3.72.51,4.97,1.52c1.22.99,2.13,2.55,2.79,4.78l5.5,18.25"/>
+    <path id="PATH_X_2" class="cls-5" d="M347.77.57l-5.74,17.53c-.7,2.14-1.6,3.67-2.75,4.65-1.24,1.06-2.91,1.59-4.98,1.59s-3.74-.54-4.98-1.59c-1.16-.98-2.06-2.51-2.76-4.65l-5.74-17.52"/>
+    <path id="PATH_N2_1" class="cls-5" d="M237.84,41l-7.8-31.48c-.28-1.16-.56-2.02-.85-2.64-.51-1.07-1.42-1.81-2.55-2.09-.68-.17-1.58-.25-2.83-.25s-2.27,1.02-2.27,2.27v42.43"/>
+    <path id="PATH_N2_2" class="cls-5" d="M246.11,1.64v41.36c0,1.32-1.02,2.4-2.27,2.4s-2.16-.1-2.87-.31c-1.13-.33-2.02-1.12-2.52-2.23-.29-.64-.56-1.5-.84-2.7"/>
+    <path id="PATH_U_1" class="cls-5" d="M361.47.57v38.05c0,2.38.79,4.04,2.48,5.22,1.9,1.32,4.87,1.99,8.81,1.99s7.26-.69,9.31-2.05c1.81-1.2,2.65-2.84,2.65-5.16V.57"/>
+  </g>
+</svg>

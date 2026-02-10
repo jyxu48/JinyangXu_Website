@@ -95,7 +95,7 @@
     "href": "Projects/project_index.html",
     "title": "Projects",
     "section": "",
-    "text": "Street-View Walkability AI\n  \n    A computer vision pipeline for measuring pedestrian experience\n    using Google Street View images, semantic segmentation, and LLMs.\n  \n\n\n\n  \n    \n  \n  Cuisine Influence Index\n  \n    Quantifying neighborhood food culture using Yelp data,\n    ACS indicators, and spatial clustering.\n  \n\n\n\n  \n    \n  \n  Housing Price Modeling\n  \n    Comparative analysis of OLS, spatial lag, and GWR models\n    for urban housing markets."
+    "text": "Street-View Walkability AI\n  \n    A computer vision pipeline for measuring pedestrian experience\n    using Google Street View images, semantic segmentation, and LLMs.\n  \n\n\n\n  \n    \n  \n  Cuisine Influence Index\n  \n    Quantifying neighborhood food culture using Yelp data,\n    ACS indicators, and spatial clustering.\n  \n\n\n\n  \n    \n  \n  Housing Price Modeling\n  \n    Comparative analysis of OLS, spatial lag, and GWR models\n    for urban housing markets.\n  \n\n\n\n  \n    \n  \n  Safe Passage: Modeling Crime Risk around SEPTA Bus Stops\n  \n    Investigates the complex relationship between transit ridership and public safety around SEPTA bus stops in Philadelphia."
   },
   {
     "objectID": "index.html",

@@ -50,5 +50,16 @@ page-layout: full
   </p>
 </a>
 
+<a class="project-card" href="mobile-signal-nanjing.pdf">
+  <div class="project-img">
+    <img src="images/mobile-signal-nanjing.png" />
+  </div>
+  <h3>Individual Activity Pattern Analysis Using Mobile Signal Data</h3>
+  <p>
+    A case study in Nanjing using mobile signal data to analyze
+    individual activity patterns and urban mobility behavior.
+  </p>
+</a>
+
 </div>
 ```

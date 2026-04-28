@@ -7,6 +7,17 @@ page-layout: full
 ```{=html}
 <div class="project-grid">
 
+<a class="project-card" href="https://jyxu48.github.io/Satellite-Deep-Learning-project/">
+  <div class="project-img">
+    <img src="images/satellite-deep-learning.png" />
+  </div>
+  <h3>Deep Learning and Remote Sensing</h3>
+  <p>
+    A Sentinel-2 land-cover segmentation workflow comparing Random Forest
+    and U-Net models for downstream ecological habitat analysis.
+  </p>
+</a>
+
 <a class="project-card" href="https://jyxu48.github.io/AI-for-Urban-Sustainability/">
   <div class="project-img">
     <img src="images/ai.png" />

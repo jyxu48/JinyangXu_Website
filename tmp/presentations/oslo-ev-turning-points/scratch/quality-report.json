@@ -1,0 +1,24 @@
+{
+  "workspace": "/Users/jinyang/Documents/GitHub/JinyangXu_Website/tmp/presentations/oslo-ev-turning-points",
+  "pptx": "/Users/jinyang/Documents/GitHub/JinyangXu_Website/tmp/presentations/oslo-ev-turning-points/output/output.pptx",
+  "checks": {
+    "pptx_package": {
+      "slide_count": 3,
+      "media_count": 1,
+      "chart_count": 0,
+      "zero_byte_media": [],
+      "invalid_png_media": [],
+      "placeholder_text": [],
+      "debug_line_colors": [],
+      "slide_numbers": [],
+      "warnings": [],
+      "failures": []
+    },
+    "output_hygiene": {
+      "output_dir": "/Users/jinyang/Documents/GitHub/JinyangXu_Website/tmp/presentations/oslo-ev-turning-points/output",
+      "unexpected_files": []
+    }
+  },
+  "failures": [],
+  "warnings": []
+}

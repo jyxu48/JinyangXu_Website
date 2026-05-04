@@ -1,0 +1,26 @@
+---
+title: "Portfolio"
+toc: false
+page-layout: full
+execute:
+  enabled: false
+---
+
+```{=html}
+<div class="cv-actions">
+  <a href="Jinyang_Xu_Portfolio.pdf" target="_blank">Open Portfolio PDF in a new tab</a>
+  <a href="Jinyang_Xu_Portfolio.pdf" download>Download Portfolio PDF</a>
+</div>
+
+<div class="pdf-page-shell rendered-pdf-pages">
+  <img class="rendered-pdf-page" src="rendered/portfolio/portfolio-01.png" alt="Portfolio page 1">
+  <img class="rendered-pdf-page" src="rendered/portfolio/portfolio-02.png" alt="Portfolio page 2">
+  <img class="rendered-pdf-page" src="rendered/portfolio/portfolio-03.png" alt="Portfolio page 3">
+  <img class="rendered-pdf-page" src="rendered/portfolio/portfolio-04.png" alt="Portfolio page 4">
+  <img class="rendered-pdf-page" src="rendered/portfolio/portfolio-05.png" alt="Portfolio page 5">
+  <img class="rendered-pdf-page" src="rendered/portfolio/portfolio-06.png" alt="Portfolio page 6">
+  <img class="rendered-pdf-page" src="rendered/portfolio/portfolio-07.png" alt="Portfolio page 7">
+  <img class="rendered-pdf-page" src="rendered/portfolio/portfolio-08.png" alt="Portfolio page 8">
+  <img class="rendered-pdf-page" src="rendered/portfolio/portfolio-09.png" alt="Portfolio page 9">
+</div>
+```

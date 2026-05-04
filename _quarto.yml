@@ -22,6 +22,9 @@ website:
       - href: Personal_CV/CV.qmd
         text: Résumé
 
+      - href: Personal_CV/Portfolio.qmd
+        text: Portfolio
+
 format:
   html:
     theme:

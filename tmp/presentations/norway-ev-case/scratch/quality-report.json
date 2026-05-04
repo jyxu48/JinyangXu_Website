@@ -1,0 +1,24 @@
+{
+  "workspace": "/Users/jinyang/Documents/GitHub/JinyangXu_Website/tmp/presentations/norway-ev-case",
+  "pptx": "/Users/jinyang/Documents/GitHub/JinyangXu_Website/tmp/presentations/norway-ev-case/output/output.pptx",
+  "checks": {
+    "pptx_package": {
+      "slide_count": 18,
+      "media_count": 8,
+      "chart_count": 3,
+      "zero_byte_media": [],
+      "invalid_png_media": [],
+      "placeholder_text": [],
+      "debug_line_colors": [],
+      "slide_numbers": [],
+      "warnings": [],
+      "failures": []
+    },
+    "output_hygiene": {
+      "output_dir": "/Users/jinyang/Documents/GitHub/JinyangXu_Website/tmp/presentations/norway-ev-case/output",
+      "unexpected_files": []
+    }
+  },
+  "failures": [],
+  "warnings": []
+}

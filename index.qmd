@@ -204,10 +204,10 @@ page-layout: full
 
 <div class="homeproject-grid">
 
-<a class="homeproject-card" href="https://jyxu48.github.io/us_rental_subsidy_website/">
+<a class="homeproject-card" href="https://jyxu48.github.io/HCV-Dashboard_4.0/">
   <div class="homeproject-layout">
     <div class="homeproject-img">
-      <img src="images/rentalcover.png" />
+      <img src="images/rental subsidy.png" />
     </div>
 
     <div class="homeproject-text">

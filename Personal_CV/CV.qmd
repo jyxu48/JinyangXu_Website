@@ -5,18 +5,13 @@ execute:
   enabled: false
 ---
 
+```{=html}
 <div class="cv-actions">
-  <a href="CV-0207.pdf" target="_blank">Open CV in a new tab</a>
-  <a href="CV-0207.pdf" download>Download CV</a>
+  <a href="Resume_Jinyang_0501.pdf" target="_blank">Open Résumé in a new tab</a>
+  <a href="Resume_Jinyang_0501.pdf" download>Download Résumé</a>
 </div>
 
-<object
-  data="CV-0207.pdf"
-  type="application/pdf"
-  style="width:80%; height:327vh; border:none;">
-  <p>
-    Your browser does not support embedded PDFs.
-    <a href="CV-0207.pdf">Download CV</a>
-  </p>
-</object>
-
+<div class="pdf-page-shell rendered-pdf-pages">
+  <img class="rendered-pdf-page" src="rendered/resume/resume-01.png" alt="Résumé page 1">
+</div>
+```

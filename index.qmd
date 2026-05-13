@@ -204,7 +204,22 @@ page-layout: full
 
 <div class="homeproject-grid">
 
-<a class="homeproject-card" href="https://jyxu48.github.io/HCV-Dashboard_4.0/">
+<a class="homeproject-card" href="https://jyxu48.github.io/hcv-map-app/web/">
+  <div class="homeproject-layout">
+    <div class="homeproject-img">
+      <img src="images/rental_subsidy_tool.png" />
+    </div>
+
+    <div class="homeproject-text">
+      <h3 class="homeproject-title">Rental Subsidy Mapping Tool</h3>
+      <p class="homeproject-desc">
+        A focused web mapping tool for exploring rental subsidy patterns and neighborhood context interactively. 
+      </p>
+    </div>
+  </div>
+</a>
+
+<a class="homeproject-card" href="https://jyxu48.github.io/HCV-Dashboard_6.0/">
   <div class="homeproject-layout">
     <div class="homeproject-img">
       <img src="images/rental subsidy.png" />

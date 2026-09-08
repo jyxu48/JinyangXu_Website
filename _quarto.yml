@@ -4,6 +4,7 @@ project:
 
 website:
   title: "JINYANG XU"
+  google-analytics: "G-GNR75R3YDR"
 
   navbar:
     title: false    

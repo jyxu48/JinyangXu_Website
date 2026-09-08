@@ -1,0 +1,142 @@
+---
+title: "Operationalizing Digital ROW Management"
+subtitle: "Evidence-based event workflows for Philadelphia's right-of-way data system"
+author: "Jinyang Xu"
+date: "June 24, 2026"
+toc: false
+page-layout: full
+---
+
+```{=html}
+<div class="memo-shell">
+  <a class="memo-backlink" href="project_index.html">Back to Projects</a>
+
+  <header class="memo-hero">
+    <div>
+      <div class="memo-kicker">Technical Memorandum</div>
+      <h1>Digital ROW Management</h1>
+      <p class="memo-dek">
+        A Stage II architecture for Philadelphia's ROWDS, centered on trusted
+        asset states and standardized event workflows that can support daily
+        right-of-way operations.
+      </p>
+      <div class="memo-meta">
+        <span>Philadelphia</span>
+        <span>Right-of-Way Data System</span>
+        <span>June 24, 2026</span>
+      </div>
+    </div>
+    <img class="memo-cover" src="images/philadelphia-digital-row.png" alt="Technical memo cover for digital ROW management">
+  </header>
+
+  <article class="memo-article">
+    <aside class="memo-toc" aria-label="Memo sections">
+      <a href="#purpose">Purpose</a>
+      <a href="#current-state">Current State</a>
+      <a href="#strategy">Proposed Strategy</a>
+      <a href="#pilot">Pilot Proposal</a>
+      <a href="#evaluation">Evaluation</a>
+    </aside>
+
+    <div class="memo-content">
+      <h2 id="purpose">Purpose</h2>
+      <p>
+        This memo evaluates Philadelphia's Digital Right-of-Way and Mobility
+        Improvement Project and proposes a Stage II architecture for ROWDS:
+        an evidence-based event workflow built around asset trust and
+        cross-agency coordination.
+      </p>
+      <p>
+        The proposed operating layer has two parts. The <strong>Trusted
+        Asset-State Process</strong> supports ongoing asset maintenance, while
+        the <strong>Standardized Event Workflow</strong> turns permits,
+        closures, utility work, and related operational changes into trackable
+        ROWDS events.
+      </p>
+      <div class="memo-callout">
+        The central shift is from shared data to view toward shared process to
+        operate.
+      </div>
+
+      <h2 id="current-state">Current State</h2>
+      <p>
+        Stage I's most important achievement was the prototype ROWDS, which
+        gave Philadelphia a more granular way to represent right-of-way assets
+        beyond the street-centerline level. It also established a strong
+        foundation for future service expansion and cross-agency coordination.
+      </p>
+      <p>
+        The next challenge is operational. ROWDS needs to live inside daily
+        workflows and keep pace with real-world changes. Asset states still
+        require a sustainable trust mechanism, especially because right-of-way
+        conditions can change through permits, utility work, field inspections,
+        sensors, and other operational events.
+      </p>
+      <p>
+        Stage I also demonstrated that permit data can be converted into
+        ROWDS-compliant Event Policy objects, but that process remained a
+        prototype. Without a live event workflow, coordination can still fall
+        back to manual map checks, email confirmation, and conversations outside
+        the system.
+      </p>
+
+      <h2 id="strategy">Proposed Strategy</h2>
+      <p>
+        In Stage II, the evidence-based event workflow should respond directly
+        to two gaps: asset trust and workflow standardization.
+      </p>
+      <p>
+        The Trusted Asset-State Process should avoid updating ROWDS asset states
+        from a single source automatically. Instead, it should define a set of
+        trusted information sources, including Cityworks, permits, utility work,
+        field inspections, and sensors, then standardize those signals into
+        ROWDS-compatible asset-state events.
+      </p>
+      <p>
+        Each event should carry a consistent information framework: source
+        system, source record ID, timestamp, geometry, affected ROWDS asset ID,
+        change type, proposed state, confidence level, and review status. A
+        state resolution framework can then compare signals across sources and
+        decide whether to keep an existing record, create a temporary state,
+        propose a permanent asset update, or route the case to manual review.
+      </p>
+      <p>
+        The Standardized Event Workflow should convert street closures, utility
+        work, curb regulation changes, and transit disruptions into trackable
+        ROWDS events. Each event should identify affected assets and route the
+        case to the responsible agencies, keeping review status and decisions in
+        one shared record.
+      </p>
+
+      <h2 id="pilot">Pilot Proposal</h2>
+      <p>
+        The proposed pilot is utility work permits that require sidewalk
+        closures. This use case involves multiple agencies, temporary changes
+        to right-of-way assets, and high coordination requirements, making it a
+        strong test case for both TASP and SEW.
+      </p>
+      <p>
+        When a permit enters the existing LaneClosure process, it would become a
+        ROWDS event linked to the affected sidewalk segment, curb segment, and
+        ADA ramp. The shared event record would route review tasks to Streets,
+        the ADA coordinator, and PPA when curb or loading impacts are relevant.
+      </p>
+      <p>
+        After agency review, the event would feed into the Trusted Asset-State
+        Process as a high-confidence operational event. The system could create
+        a temporary asset state without overwriting the permanent record, then
+        expire that temporary state when the approved time window ends unless
+        new evidence indicates a longer-term change.
+      </p>
+
+      <h2 id="evaluation">Evaluation</h2>
+      <p>
+        The pilot should be evaluated against reductions in off-system
+        coordination, faster agency notification, improved event-to-asset
+        linkage, and stronger evidence trails for future ROWDS updates.
+      </p>
+      <a class="memo-download" href="files/philadelphia-digital-row-technical-memo.pdf" download>Download original memo</a>
+    </div>
+  </article>
+</div>
+```

@@ -7,17 +7,6 @@ page-layout: full
 ```{=html}
 <div class="project-grid">
 
-<a class="project-card" href="https://jyxu48.github.io/Satellite-Deep-Learning-project/">
-  <div class="project-img">
-    <img src="images/satellite-deep-learning.png" />
-  </div>
-  <h3>Deep Learning and Remote Sensing</h3>
-  <p>
-    A Sentinel-2 land-cover segmentation workflow comparing Random Forest
-    and U-Net models for downstream ecological habitat analysis.
-  </p>
-</a>
-
 <a class="project-card" href="https://jyxu48.github.io/HCV-Dashboard_6.0/">
   <div class="project-img">
     <img src="images/rental subsidy.png" />
@@ -26,6 +15,28 @@ page-layout: full
   <p>
     An interactive dashboard exploring Housing Choice Voucher patterns,
     rental subsidy data, and local demographic context.
+  </p>
+</a>
+
+<a class="project-card" href="philadelphia-digital-row.html">
+  <div class="project-img project-img-row-memo">
+    <img src="images/philadelphia-digital-row.png" style="object-position: center 24%;" />
+  </div>
+  <h3>Operationalizing Digital ROW Management</h3>
+  <p>
+    A technical memo proposing trusted asset-state processes and standardized
+    event workflows for Philadelphia's digital right-of-way data system.
+  </p>
+</a>
+
+<a class="project-card" href="https://jyxu48.github.io/Satellite-Deep-Learning-project/">
+  <div class="project-img">
+    <img src="images/satellite-deep-learning.png" />
+  </div>
+  <h3>Deep Learning and Remote Sensing</h3>
+  <p>
+    A Sentinel-2 land-cover segmentation workflow comparing Random Forest
+    and U-Net models for downstream ecological habitat analysis.
   </p>
 </a>
 

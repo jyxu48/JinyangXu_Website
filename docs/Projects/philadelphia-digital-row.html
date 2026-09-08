@@ -1,0 +1,444 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
+
+<meta charset="utf-8">
+<meta name="generator" content="quarto-1.7.32">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-GNR75R3YDR"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-GNR75R3YDR');
+</script>
+
+<title>Operationalizing Digital ROW Management - JINYANG XU</title>
+<style>
+code{white-space: pre-wrap;}
+span.smallcaps{font-variant: small-caps;}
+div.columns{display: flex; gap: min(4vw, 1.5em);}
+div.column{flex: auto; overflow-x: auto;}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+  width: 0.8em;
+  margin: 0 0.8em 0.2em -1em;
+  vertical-align: middle;
+}
+
+.memo-shell {
+  width: min(1120px, calc(100vw - 3rem));
+  margin: 0 auto;
+  padding: 4rem 0 6rem;
+  font-family: 'Inter', system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+}
+
+.memo-backlink {
+  display: inline-flex;
+  margin-bottom: 2.4rem;
+  color: #59717a;
+  font-size: 0.95rem;
+  font-weight: 550;
+  text-decoration: none;
+  border-bottom: 2px solid #c8d3d7;
+}
+
+.memo-backlink:hover {
+  color: #111;
+  border-color: #8fa5ad;
+}
+
+.memo-hero {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(300px, 40%);
+  gap: clamp(2rem, 4vw, 4rem);
+  align-items: center;
+  padding-bottom: 3rem;
+  border-bottom: 1px solid #e2e7e9;
+}
+
+.memo-kicker {
+  color: #4b7c90;
+  font-size: 0.88rem;
+  font-weight: 650;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+}
+
+.memo-hero h1 {
+  max-width: 12ch;
+  margin: 1rem 0 1.2rem;
+  color: #17252b;
+  font-family: 'Inter', system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  font-size: clamp(3rem, 5.5vw, 5rem);
+  font-weight: 560;
+  line-height: 0.98;
+  letter-spacing: 0;
+}
+
+.memo-dek {
+  max-width: 58ch;
+  color: #52646b;
+  font-size: 1.15rem;
+  line-height: 1.7;
+}
+
+.memo-meta {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.7rem;
+  margin-top: 1.8rem;
+  color: #6d7b80;
+  font-size: 0.95rem;
+}
+
+.memo-meta span {
+  padding-right: 0.8rem;
+  border-right: 1px solid #cad4d8;
+}
+
+.memo-meta span:last-child {
+  border-right: 0;
+}
+
+.memo-cover {
+  width: 100%;
+  border-radius: 6px;
+  box-shadow: 0 20px 60px rgba(25, 42, 49, 0.14);
+}
+
+.memo-article {
+  display: block;
+  max-width: 760px;
+  margin: 3.8rem auto 0;
+}
+
+.memo-toc {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem 1.15rem;
+  margin-bottom: 2.4rem;
+  padding-bottom: 1.2rem;
+  border-bottom: 1px solid #e2e7e9;
+  color: #74858b;
+  font-size: 0.92rem;
+  line-height: 1.8;
+}
+
+.memo-toc a {
+  display: inline-flex;
+  color: inherit;
+  text-decoration: none;
+}
+
+.memo-toc a:hover {
+  color: #111;
+}
+
+.memo-content {
+  width: 100%;
+  max-width: 760px;
+}
+
+.memo-content h2 {
+  margin: 2.8rem 0 0.9rem;
+  color: #17252b;
+  font-family: 'Inter', system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  font-size: 1.7rem;
+  font-weight: 590;
+  letter-spacing: 0;
+}
+
+.memo-content h2:first-child {
+  margin-top: 0;
+}
+
+.memo-content p,
+.memo-content li {
+  color: #3c474b;
+  font-size: 1.04rem;
+  line-height: 1.78;
+}
+
+.memo-content strong {
+  color: #17252b;
+}
+
+.memo-callout {
+  margin: 2.2rem 0;
+  padding: 1.4rem 1.6rem;
+  border-left: 4px solid #4b7c90;
+  background: #f3f7f8;
+  color: #2d3b40;
+}
+
+.memo-download {
+  display: inline-flex;
+  margin-top: 2.2rem;
+  color: #4b7c90;
+  font-weight: 650;
+  text-decoration: none;
+  border-bottom: 3px solid #c8d3d7;
+}
+
+.memo-download:hover {
+  color: #111;
+  border-color: #8fa5ad;
+}
+
+@media (max-width: 860px) {
+  .memo-shell {
+    width: min(100% - 1.25rem, 760px);
+    padding-top: 2.5rem;
+  }
+
+  .memo-hero {
+    grid-template-columns: 1fr;
+  }
+
+  .memo-hero h1 {
+    max-width: 100%;
+    font-size: clamp(2.6rem, 14vw, 4.8rem);
+  }
+
+  .memo-toc {
+    gap: 0.6rem 1rem;
+  }
+}
+</style>
+
+<script src="../site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="../site_libs/clipboard/clipboard.min.js"></script>
+<script src="../site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="../site_libs/quarto-search/fuse.min.js"></script>
+<script src="../site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="../">
+<script src="../site_libs/quarto-html/quarto.js" type="module"></script>
+<script src="../site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
+<script src="../site_libs/quarto-html/popper.min.js"></script>
+<script src="../site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="../site_libs/quarto-html/anchor.min.js"></script>
+<link href="../site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="../site_libs/quarto-html/quarto-syntax-highlighting-37eea08aefeeee20ff55810ff984fec1.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="../site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="../site_libs/bootstrap/bootstrap-31378f4e736fce8ef5a937b75e344885.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<script id="quarto-search-options" type="application/json">{
+  "location": "navbar",
+  "copy-button": false,
+  "collapse-after": 3,
+  "panel-placement": "end",
+  "type": "overlay",
+  "limit": 50,
+  "keyboard-shortcut": [
+    "f",
+    "/",
+    "s"
+  ],
+  "show-item-context": false,
+  "language": {
+    "search-no-results-text": "No results",
+    "search-matching-documents-text": "matching documents",
+    "search-copy-link-title": "Copy link to search",
+    "search-hide-matches-text": "Hide additional matches",
+    "search-more-match-text": "more match in this document",
+    "search-more-matches-text": "more matches in this document",
+    "search-clear-button-title": "Clear",
+    "search-text-placeholder": "",
+    "search-detached-cancel-button-title": "Cancel",
+    "search-submit-button-title": "Submit",
+    "search-label": "Search"
+  }
+}</script>
+
+</head>
+
+<body class="nav-fixed quarto-light">
+
+<div id="quarto-search-results"></div>
+  <header id="quarto-header" class="headroom fixed-top">
+    <nav class="navbar navbar-expand-lg " data-bs-theme="dark">
+      <div class="navbar-container container-fluid">
+            <div id="quarto-search" class="" title="Search"></div>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" role="menu" aria-expanded="false" aria-label="Toggle navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+  <span class="navbar-toggler-icon"></span>
+</button>
+          <div class="collapse navbar-collapse" id="navbarCollapse">
+            <ul class="navbar-nav navbar-nav-scroll me-auto">
+  <li class="nav-item">
+    <a class="nav-link" href="../index.html"> 
+<span class="menu-text">Home</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link active" href="../Projects/project_index.html" aria-current="page"> 
+<span class="menu-text">Projects</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="../Personal_CV/CV.html"> 
+<span class="menu-text">Résumé</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="../Personal_CV/Portfolio.html"> 
+<span class="menu-text">Portfolio</span></a>
+  </li>  
+</ul>
+          </div>
+            <div class="quarto-navbar-tools">
+</div>
+      </div>
+    </nav>
+</header>
+
+<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-full page-navbar">
+<main class="content column-page" id="quarto-document-content">
+
+<div class="memo-shell">
+  <a class="memo-backlink" href="project_index.html">Back to Projects</a>
+
+  <header class="memo-hero">
+    <div>
+      <div class="memo-kicker">Technical Memorandum</div>
+      <h1>Digital ROW Management</h1>
+      <p class="memo-dek">
+        A Stage II architecture for Philadelphia's ROWDS, centered on trusted
+        asset states and standardized event workflows that can support daily
+        right-of-way operations.
+      </p>
+      <div class="memo-meta">
+        <span>Philadelphia</span>
+        <span>Right-of-Way Data System</span>
+        <span>June 24, 2026</span>
+      </div>
+    </div>
+    <img class="memo-cover" src="images/philadelphia-digital-row.png" alt="Technical memo cover for digital ROW management">
+  </header>
+
+  <article class="memo-article">
+    <aside class="memo-toc" aria-label="Memo sections">
+      <a href="#purpose">Purpose</a>
+      <a href="#current-state">Current State</a>
+      <a href="#strategy">Proposed Strategy</a>
+      <a href="#pilot">Pilot Proposal</a>
+      <a href="#evaluation">Evaluation</a>
+    </aside>
+
+    <div class="memo-content">
+      <h2 id="purpose">Purpose</h2>
+      <p>
+        This memo evaluates Philadelphia's Digital Right-of-Way and Mobility
+        Improvement Project and proposes a Stage II architecture for ROWDS:
+        an evidence-based event workflow built around asset trust and
+        cross-agency coordination.
+      </p>
+      <p>
+        The proposed operating layer has two parts. The <strong>Trusted
+        Asset-State Process</strong> supports ongoing asset maintenance, while
+        the <strong>Standardized Event Workflow</strong> turns permits,
+        closures, utility work, and related operational changes into trackable
+        ROWDS events.
+      </p>
+      <div class="memo-callout">
+        The central shift is from shared data to view toward shared process to
+        operate.
+      </div>
+
+      <h2 id="current-state">Current State</h2>
+      <p>
+        Stage I's most important achievement was the prototype ROWDS, which
+        gave Philadelphia a more granular way to represent right-of-way assets
+        beyond the street-centerline level. It also established a strong
+        foundation for future service expansion and cross-agency coordination.
+      </p>
+      <p>
+        The next challenge is operational. ROWDS needs to live inside daily
+        workflows and keep pace with real-world changes. Asset states still
+        require a sustainable trust mechanism, especially because right-of-way
+        conditions can change through permits, utility work, field inspections,
+        sensors, and other operational events.
+      </p>
+      <p>
+        Stage I also demonstrated that permit data can be converted into
+        ROWDS-compliant Event Policy objects, but that process remained a
+        prototype. Without a live event workflow, coordination can still fall
+        back to manual map checks, email confirmation, and conversations outside
+        the system.
+      </p>
+
+      <h2 id="strategy">Proposed Strategy</h2>
+      <p>
+        In Stage II, the evidence-based event workflow should respond directly
+        to two gaps: asset trust and workflow standardization.
+      </p>
+      <p>
+        The Trusted Asset-State Process should avoid updating ROWDS asset states
+        from a single source automatically. Instead, it should define a set of
+        trusted information sources, including Cityworks, permits, utility work,
+        field inspections, and sensors, then standardize those signals into
+        ROWDS-compatible asset-state events.
+      </p>
+      <p>
+        Each event should carry a consistent information framework: source
+        system, source record ID, timestamp, geometry, affected ROWDS asset ID,
+        change type, proposed state, confidence level, and review status. A
+        state resolution framework can then compare signals across sources and
+        decide whether to keep an existing record, create a temporary state,
+        propose a permanent asset update, or route the case to manual review.
+      </p>
+      <p>
+        The Standardized Event Workflow should convert street closures, utility
+        work, curb regulation changes, and transit disruptions into trackable
+        ROWDS events. Each event should identify affected assets and route the
+        case to the responsible agencies, keeping review status and decisions in
+        one shared record.
+      </p>
+
+      <h2 id="pilot">Pilot Proposal</h2>
+      <p>
+        The proposed pilot is utility work permits that require sidewalk
+        closures. This use case involves multiple agencies, temporary changes
+        to right-of-way assets, and high coordination requirements, making it a
+        strong test case for both TASP and SEW.
+      </p>
+      <p>
+        When a permit enters the existing LaneClosure process, it would become a
+        ROWDS event linked to the affected sidewalk segment, curb segment, and
+        ADA ramp. The shared event record would route review tasks to Streets,
+        the ADA coordinator, and PPA when curb or loading impacts are relevant.
+      </p>
+      <p>
+        After agency review, the event would feed into the Trusted Asset-State
+        Process as a high-confidence operational event. The system could create
+        a temporary asset state without overwriting the permanent record, then
+        expire that temporary state when the approved time window ends unless
+        new evidence indicates a longer-term change.
+      </p>
+
+      <h2 id="evaluation">Evaluation</h2>
+      <p>
+        The pilot should be evaluated against reductions in off-system
+        coordination, faster agency notification, improved event-to-asset
+        linkage, and stronger evidence trails for future ROWDS updates.
+      </p>
+      <a class="memo-download" href="files/philadelphia-digital-row-technical-memo.pdf" download>Download original memo</a>
+    </div>
+  </article>
+</div>
+
+</main>
+</div>
+
+<script id="quarto-html-after-body" type="application/javascript">
+  window.document.addEventListener("DOMContentLoaded", function () {
+    if (window.AnchorJS) {
+      const anchorJS = new window.AnchorJS();
+      anchorJS.options = { placement: 'right', icon: '' };
+      anchorJS.add('.anchored');
+    }
+  });
+</script>
+
+</body></html>

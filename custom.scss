@@ -433,6 +433,10 @@ body {
   transform-origin: center;
 }
 
+.project-img-row-memo img {
+  object-position: center 24%;
+}
+
 /* hover：轻微放大（可选） */
 .project-img img:hover {
   transform: scale(1.04);
@@ -710,4 +714,186 @@ body {
   width: 16px;
   height: 16px;
   fill: currentColor;
+}
+
+/* ===== Technical memo article ===== */
+
+.memo-shell {
+  width: min(1120px, calc(100vw - 3rem));
+  margin: 0 auto;
+  padding: 4rem 0 6rem;
+  font-family: 'Inter', sans-serif;
+}
+
+.memo-backlink {
+  display: inline-flex;
+  margin-bottom: 2.4rem;
+  color: #59717a;
+  font-size: 0.95rem;
+  font-weight: 550;
+  text-decoration: none;
+  border-bottom: 2px solid #c8d3d7;
+}
+
+.memo-backlink:hover {
+  color: #111;
+  border-color: #8fa5ad;
+}
+
+.memo-hero {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(300px, 40%);
+  gap: clamp(2rem, 4vw, 4rem);
+  align-items: center;
+  padding-bottom: 3rem;
+  border-bottom: 1px solid #e2e7e9;
+}
+
+.memo-kicker {
+  color: #4b7c90;
+  font-size: 0.88rem;
+  font-weight: 650;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+}
+
+.memo-hero h1 {
+  max-width: 12ch;
+  margin: 1rem 0 1.2rem;
+  color: #17252b;
+  font-family: 'Inter', sans-serif;
+  font-size: clamp(3rem, 5.5vw, 5rem);
+  font-weight: 560;
+  line-height: 0.98;
+  letter-spacing: 0;
+}
+
+.memo-dek {
+  max-width: 58ch;
+  color: #52646b;
+  font-size: 1.15rem;
+  line-height: 1.7;
+}
+
+.memo-meta {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.7rem;
+  margin-top: 1.8rem;
+  color: #6d7b80;
+  font-size: 0.95rem;
+}
+
+.memo-meta span {
+  padding-right: 0.8rem;
+  border-right: 1px solid #cad4d8;
+}
+
+.memo-meta span:last-child {
+  border-right: 0;
+}
+
+.memo-cover {
+  width: 100%;
+  border-radius: 6px;
+  box-shadow: 0 20px 60px rgba(25, 42, 49, 0.14);
+}
+
+.memo-article {
+  display: block;
+  max-width: 760px;
+  margin: 3.8rem auto 0;
+}
+
+.memo-toc {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem 1.15rem;
+  margin-bottom: 2.4rem;
+  padding-bottom: 1.2rem;
+  border-bottom: 1px solid #e2e7e9;
+  color: #74858b;
+  font-size: 0.92rem;
+  line-height: 1.8;
+}
+
+.memo-toc a {
+  display: inline-flex;
+  color: inherit;
+  text-decoration: none;
+}
+
+.memo-toc a:hover {
+  color: #111;
+}
+
+.memo-content {
+  width: 100%;
+  max-width: 760px;
+}
+
+.memo-content h2 {
+  margin: 2.8rem 0 0.9rem;
+  color: #17252b;
+  font-family: 'Inter', sans-serif;
+  font-size: 1.7rem;
+  font-weight: 590;
+  letter-spacing: 0;
+}
+
+.memo-content h2:first-child {
+  margin-top: 0;
+}
+
+.memo-content p,
+.memo-content li {
+  color: #3c474b;
+  font-size: 1.04rem;
+  line-height: 1.78;
+}
+
+.memo-content strong {
+  color: #17252b;
+}
+
+.memo-callout {
+  margin: 2.2rem 0;
+  padding: 1.4rem 1.6rem;
+  border-left: 4px solid #4b7c90;
+  background: #f3f7f8;
+  color: #2d3b40;
+}
+
+.memo-download {
+  display: inline-flex;
+  margin-top: 2.2rem;
+  color: #4b7c90;
+  font-weight: 650;
+  text-decoration: none;
+  border-bottom: 3px solid #c8d3d7;
+}
+
+.memo-download:hover {
+  color: #111;
+  border-color: #8fa5ad;
+}
+
+@media (max-width: 860px) {
+  .memo-shell {
+    width: min(100% - 1.25rem, 760px);
+    padding-top: 2.5rem;
+  }
+
+  .memo-hero {
+    grid-template-columns: 1fr;
+  }
+
+  .memo-hero h1 {
+    max-width: 100%;
+    font-size: clamp(2.6rem, 14vw, 4.8rem);
+  }
+
+  .memo-toc {
+    gap: 0.6rem 1rem;
+  }
 }
